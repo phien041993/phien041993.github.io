@@ -1,0 +1,394 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.header{
+    --header-height: 46px;
+    background-color: black;
+    height: var(--header-height);
+    position: relative;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header__list{
+    list-style: none;
+    
+}
+
+.header__item{
+    display: inline-block;
+    position: relative;
+}
+
+.header__item:hover .header__link-list{
+    display: block;
+}
+
+.header__item:hover .header__link-icon,
+.header__item:hover .header__link{
+    background-color: #ccc;
+    color: black;
+}
+
+.header__link{
+    text-decoration: none;
+    color: white;
+    line-height: var(--header-height);
+    padding: 0 24px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.header__link-list{
+    display: none;
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    min-width: 160px;
+    list-style: none;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.header__link-item:hover .header__link-link{
+    background-color: #ccc;
+}
+
+.header__link-link{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: block;
+    padding: 8px 14px;
+    text-align: left; 
+}
+
+.header__link-icon{
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.header__search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 46px;
+    padding: 0 22px;
+}
+
+.header__search:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.header__search-icon{
+    color: white;
+}
+
+.header__menu{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    line-height: 46px;
+    padding: 0 22px;
+    display: none;
+}
+
+.header__menu-icon{
+    color: white;
+    font-size: 1.4rem;
+}
+
+.mobile__overlay{
+    position: fixed;
+    top: 212px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.3);
+    display: none;
+}
+
+.mobile__menu-bars{
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.mobile__menu-list{
+    list-style: none;
+    background: black;
+}
+
+.mobile__menu-link{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    padding: 12px 24px;
+}
+
+.mobile__menu-checkbox:checked ~ .mobile__overlay,
+.mobile__menu-checkbox:checked ~ .mobile__menu-bars{
+    display: block;
+}
+
+/* Slider */
+.slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('./Picture/ny.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+.slider__body{
+    position: absolute;
+    color: white;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.slider__body-heading{
+    margin: 10px 0;
+}
+
+.slider__body-content{
+    margin: 25px 0;
+}
+
+
+/* Content */
+
+.content__theband{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+.content__heading{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 200;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.content__sologan{
+    text-align: center;
+    margin: 25px 0 15px;
+    font-size: 15px;
+    font-style: italic;
+    color: #757575;
+}
+
+.content__member-para{
+    margin: 15px 0;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.content__member-item{
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.content__member-name{
+    margin: 15px 0;
+}
+
+.content__member-img{
+    width: 154px;
+    margin-bottom: 16px;
+}
+
+/* Tour dates */
+.content__background{
+    background-color: #000;
+    color: white;
+}
+
+.content__tickets{
+    margin-top: 30px;
+}
+
+.content__tickets-list{
+    list-style: none;
+    background-color: white;
+    color: #757575;
+    
+}
+
+.content__tickets-item{
+    border-bottom: 1px solid #ccc;
+    padding: 8px 16px;
+}
+
+.content__sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 2px 8px;
+    margin-left: 16px;
+}
+
+.content__quantity{
+    --height-quantity: 24px;
+    background-color: black;
+    color: white;
+    float: right;
+    text-align: center;
+    width: var(--height-quantity);
+    height: var(--height-quantity);
+    line-height: var(--height-quantity);
+    border-radius: 50%;
+    margin-top: -2px;
+}
+
+/* Place tour */
+
+.content__place-item{
+    width: calc(100% / 3);
+    padding: 0 8px;
+}
+
+.content__place-img{
+    width: 100%;
+    display: block;
+    opacity: 1;
+}
+
+.content__place-img:hover{
+    opacity: 0.8;
+}
+
+.content__place-sub{
+    background-color: white;
+    color: black;
+    padding: 0 16px;
+}
+
+.content__place-sub-heading{
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.content__place-sub-date{
+    margin-bottom: 15px;
+    color: #757575;
+}
+
+.content__place-sub-content{
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.content__place-sub-buy{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.content__place-sub-buy:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+/* Contact */
+.content__theband-contact{
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.content__theband-contact-icon{
+    display: inline-block;
+    width: 28px;
+}
+
+.form-control{
+    padding: 8px;
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.btn{
+    float: right;
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 16px 0;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.content__maps{
+    padding-top: 50%;
+    background: url('./Picture/map.jpg') top center /cover no-repeat;
+    opacity: 0.8;
+}
+
+
+/* Footer */
+.footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.footer__ending{
+    opacity: 0.8;
+}
+
+.footer__socials{
+    
+}
+
+.footer__socials-icon{
+    font-size: 1.6rem;
+    margin-right: 2px;
+}
+
+.footer__socials-icon:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.footer__by{
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+
+.footer__by-para{
+
+}
+
+.footer__by-link{
+    color: #888;
+}
