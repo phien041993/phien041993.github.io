@@ -220,6 +220,10 @@
         padding: 30px 20px;
         line-height: 1.4;
     }
+
+    .header__search-input::after{
+        border:none;
+    }
 }
 
 /* IP5/SE */
