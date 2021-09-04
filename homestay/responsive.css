@@ -116,6 +116,10 @@
     .hide-on-tablet-pro{
         display: none;
     }
+
+     .footer__download-apps-img{
+         width: 80%;
+     }   
 }
 
 /* Mobile */
