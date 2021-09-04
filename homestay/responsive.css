@@ -241,3 +241,9 @@
         margin: 0 18px;
     }
 }
+
+/* Fold */
+@media (max-width: 280px){
+    .header__search-input {
+        min-width: 222px;
+}
