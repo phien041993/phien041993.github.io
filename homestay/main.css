@@ -109,16 +109,32 @@
     left: calc(var(--calendar-width) / -2);
     display: none;
     animation: fadeIn linear 0.3s;
+    z-index: 2;
 }
 
-.header__search-date:focus-within .header__search-calendar{
+.header__search-date-checkbox:checked ~ .header__date-checkbox-overlay,
+.header__search-date-checkbox:checked ~ .header__search-calendar{
     display: flex;
+}
+
+.header__date-checkbox-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    z-index: 1;
 }
 
 .header__search-date:focus-within{
     box-shadow: inset 0 0 0 2px rgb(0 0 0 / 14%);
     color: #000;
     border-radius: 5px;
+}
+
+.header__search-letter{
+    cursor: pointer;
 }
 
 .header__calendar-page{
@@ -258,8 +274,22 @@
     border-radius: 5px;
 }
 
-.header__search-quantity:focus-within .header__search-quantity-list{
+.header__search-quantity-checkbox:checked ~ .header__search-quantity-list{
     display: flex;
+}
+
+.header__search-quantity-checkbox:checked ~ .header__quantity-checkbox-overlay{
+    display: block;
+}
+
+.header__quantity-checkbox-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    z-index: 1;
 }
 
 .header__search-quantity-list{
@@ -279,6 +309,7 @@
     margin-left: 58px;
     display: none;
     animation: fadeIn linear 0.3s;
+    z-index: 2;
 }
 
 .header__search-quantity-item{
@@ -410,6 +441,7 @@
     text-decoration: none;
     color: rgb(34, 34, 34); 
     align-items: center; 
+    cursor: pointer;
 }
 
 .header__navbar-img{
@@ -429,8 +461,19 @@
 }
 
 /* Language */
-.header__navbar-item-logoVN:focus-within .header__navbar-language{
+.header__navbar-item-logoVN-checkbox:checked ~ .header__navbar-item-logoVN-overlay,
+.header__navbar-item-logoVN-checkbox:checked ~ .header__navbar-language{
     display: flex;
+}
+
+.header__navbar-item-logoVN-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    z-index: 1;
 }
 
 .header__navbar-language{
@@ -446,6 +489,7 @@
     display: none;
     will-change: opacity transform;
     animation: fadeIn linear 0.3s, grow ease-in 0.3s;
+    z-index: 2;
 }
 
 .header__navbar-language::after{

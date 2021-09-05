@@ -38,8 +38,9 @@
                                 <div class="mr-12">
                                     <i class="opacity08 far fa-calendar"></i>
                                 </div>
-                                <a href="#" class="header__search-letter">Ngày</a>
-                                
+                                <label for="header__date-checkbox" class="header__search-letter">Ngày</label> 
+
+                                <input type="checkbox" hidden id="header__date-checkbox" class="header__search-date-checkbox">
                                 <div class="header__search-calendar">
                                     <div class="header__calendar-page">
                                         <div class="header__search-calendar-year">
@@ -162,14 +163,16 @@
                                         <button class="header__action-btn header__action-btn-right">Áp dụng</button>
                                     </div>
                                 </div>
+                                <label for="header__date-checkbox" class="header__date-checkbox-overlay"></label>
                             </div>
     
-                            <div class="header__search-quantity hide-on-tablet-pro hide-on-mobile header__search-flex">
+                            <div for="header__quantity-checkbox" class="header__search-quantity hide-on-tablet-pro hide-on-mobile header__search-flex">
                                 <div class="mr-12">
                                     <i class="opacity08 fas fa-user"></i>
                                 </div>
-                                <a href="#" class="header__search-letter">Số khách</a>
-                            
+                                <label for="header__quantity-checkbox" class="header__search-letter">Số khách</label>
+                                
+                                <input type="checkbox" hidden id="header__quantity-checkbox" class="header__search-quantity-checkbox">
                                 <div class="header__search-quantity-list">
                                     <div class="header__search-quantity-item">
                                         <button class="header__search-quantity-item-content">Người lớn</button>
@@ -227,6 +230,7 @@
                                         <button class="header__action-btn header__action-btn-right">Áp dụng</button>
                                     </div>
                                 </div>
+                                <label for="header__quantity-checkbox" class="header__quantity-checkbox-overlay"></label>
                             </div>
     
                             <button class="header__search-btn hide-on-mobile">
@@ -264,18 +268,20 @@
                         <li class="header__navbar-item">
                             <a class="header__navbar-link" href="#">Đăng nhập</a>
                         </li>
+
                         <div class="header__navbar-item-logoVN">
-                            <li class="header__navbar-item">
-                                <a class="header__navbar-link" href="#">
+                            <label for="header__navbar-checkbox" class="header__navbar-item">
+                                <label for="header__navbar-checkbox" class="header__navbar-link">
                                     <div style="display: flex; align-items: center;">
                                         <img src="./vi.svg" alt="VN" class="header__navbar-img">
                                         <span class="header__navbar-item-vnd">VND</span> 
                                     </div>
                                     <i class="header__navbar-icon fas fa-angle-down"></i>
-                                 </a>
-                             </li>
+                                 </label>
+                            </label>
 
-                             <div class="header__navbar-language row">
+                            <input type="checkbox" hidden id="header__navbar-checkbox" class="header__navbar-item-logoVN-checkbox">
+                            <div class="header__navbar-language row">
                                  <div class="header__navbar-language-list l-6">
                                     <li class="header__navbar-language-item">
                                         <a href="" class="header__navbar-language-link row">
@@ -307,7 +313,8 @@
                                         <a href="" class="header__navbar-language-money-link"><span class="header__navbar-language-money-price">USD</span>United States Dollar</a>                                     
                                     </li>
                                  </div>
-                             </div>
+                            </div>
+                            <label for="header__navbar-checkbox" class="header__navbar-item-logoVN-overlay"></label>
                         </div>
 
                         <label for="mobile-tablet-menu" class="header__navbar-list-close">

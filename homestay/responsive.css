@@ -228,6 +228,11 @@
     .header__search-input::after{
         border:none;
     }
+
+    .header__navbar-link{
+        justify-content: space-between;
+    }
+
 }
 
 /* IP5/SE */
@@ -251,3 +256,6 @@
     .header__search-input {
         min-width: 222px;
 }
+
+
+
