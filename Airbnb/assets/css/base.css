@@ -1,0 +1,26 @@
+:root{
+    --primary-color: #ee4d2d;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --boder-color: #dbdbdb;
+    --header-height: 80px;
+    --calendar-width: 835px;
+    --calendar-width-tablet: 692px;
+}
+
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
