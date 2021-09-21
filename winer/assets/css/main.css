@@ -401,10 +401,18 @@
 .slider{
     background-color: white;
 }
+
+.slider__content{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .slider__logo-center{
     height: 80px;
     display: flex;
     align-items: center;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .slider__logo-center-img{
@@ -500,6 +508,8 @@
 
 .slider__icon{
     display: flex;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .slider__icon{
