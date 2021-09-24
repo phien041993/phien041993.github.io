@@ -1,0 +1,62 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #222;
+    --header-height: 80px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.text-right{
+    text-align: right !important;
+}
+
+@keyframes Opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes slider-1 {
+    0%{visibility: visible; opacity: 0;}
+    25%{visibility: visible; opacity: 1;}
+    50%{visibility: hidden;}
+    75%{visibility: hidden;}
+    100%{visibility: hidden;}
+}
+
+@keyframes slider-2 {
+    0%{visibility: hidden;}
+    25%{visibility: visible; opacity: 0;}
+    50%{visibility: visible; opacity: 1;}
+    75%{visibility: hidden;}
+    100%{visibility: hidden;}
+}
+
+@keyframes slider-3 {
+    0%{visibility: hidden;}
+    25%{visibility: hidden;}
+    50%{visibility: visible; opacity: 0;}
+    75%{visibility: visible;opacity: 1;}
+    100%{visibility: hidden;}
+}
+
+@keyframes slider-4 {
+    0%{visibility: hidden;}
+    25%{visibility: hidden;}
+    50%{visibility: hidden;}
+    75%{visibility: visible; opacity: 0;}
+    100%{visibility: visible; opacity: 1;}
+}
