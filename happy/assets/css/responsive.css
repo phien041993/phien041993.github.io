@@ -131,7 +131,7 @@
     }
 
     .content__our-story-list{
-        justify-content: end;
+        justify-content: flex-end;
         margin-bottom: 60px;
         margin-right: 8px;
     }
