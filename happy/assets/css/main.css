@@ -602,7 +602,7 @@
     margin-bottom: 6px;
 }
 
-.footer__contact-item:hover .footer__contatct-link{
+.footer__contatct-link:hover{
     color: #3cc3c7;
 }
 
