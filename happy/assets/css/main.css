@@ -24,6 +24,8 @@
     font-size: 3rem;
     font-weight: 500;
     line-height: var(--header-height);
+    text-decoration: none;
+    color: #222;
 }
 
 .header__content-list{
@@ -143,7 +145,7 @@
     font-family: 'Ephesis', cursive;
     font-family: 'Great Vibes', cursive;
     color: rgb(236, 14, 14);
-    font-size: 2.2rem;
+    font-size: 3rem;
     font-weight: 500;
     animation: Opacity linear 0.5s;
     text-align: center;
@@ -260,6 +262,15 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transform: rotateX(0) rotateY(0);
+    transition: transform linear 0.6s, opacity linear 0.6s;
+}
+
+.content__wedding-users-item-img:hover{
+    opacity: 0.9;
+    transform: rotateX(20deg) rotateY(20deg);
 }
 
 .content__wedding-users-name-para{
@@ -323,11 +334,11 @@
 .content__our-story-nav-img{
     width: 100%;
     transform: scale(1);
+    transition: transform linear 0.5s;
 }
 
 .content__our-story-nav-item:hover .content__our-story-nav-img{
     transform: scale(1.06);
-    transition: transform linear 0.5s;
 }
 
 .content__our-story-nav-item:hover .content__our-story-icon i{
@@ -412,7 +423,6 @@
 
 .content__our-gallery-item:hover .content__our-gallery-img{
     transform: scale(1.06);
-    transition: transform ease-in 0.5s;
     cursor: pointer;
 }
 
@@ -436,6 +446,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: scale(1);
+    transition: transform ease-in 0.5s;
 }
 
 .content__our-gallery-item:first-child{
@@ -521,13 +533,19 @@
 }
 
 .content__best-friend-item{
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .content__best-friends-img{
     width: 100%;
     border-radius: 50%;
     object-fit: cover;
+    transform: scale(1);
+    transition: transform linear 0.4s;
+}
+
+.content__best-friends-img:hover{
+    transform: scale(1.04);
 }
 
 .content__best-friend-name{
@@ -555,7 +573,7 @@
     overflow:hidden;
 }
    
-   .youtube iframe, .youtube object, .youtube embed {
+.youtube iframe, .youtube object, .youtube embed {
     position:absolute;
     top:0;
     left:0;
@@ -565,7 +583,7 @@
 
 /* Footer */
 .footer{
-    background-color: rgb(202, 179, 179);
+    background-color: rgb(228, 226, 226);
 }
 
 .footer__content{
@@ -581,7 +599,7 @@
     font-size: 30px;
     font-weight: 500;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .footer__contatct-link{
@@ -589,35 +607,27 @@
     color: #222;
 }
 
+.footer__contatct-link:hover{
+    color: #70a076;
+}
+
 .footer__contatct-link i{
-    width: 24px;
+    width: 20px;
+    height: 20px;
     text-align: center;
 }
 
 .footer__content-item{
-    transform: translateX(25%);
+    transform: translateX(20%);
+    margin-bottom: 20px;
 }
 
 .footer__contact-item{
-    margin-bottom: 6px;
-}
-
-.footer__contatct-link:hover{
-    color: #3cc3c7;
-}
-
-.footer__end{
-    max-width: 1260px;
-    margin: 0 auto;
+    margin-bottom: 8px;
 }
 
 .footer__end-para{
     text-align: center;
-    font-size: 16px;
-    color: rgb(70, 70, 70);
-    padding-bottom: 40px;
-}
-
-.audio{
-    text-align: center;
+    font-size: 14px;
+    color: #868686;
 }

@@ -20,6 +20,11 @@ html {
     text-align: right !important;
 }
 
+.row-reverse{
+    flex-direction: row-reverse;
+    justify-content: flex-start !important;
+}
+
 @keyframes Opacity{
     0%{
         opacity: 0;
