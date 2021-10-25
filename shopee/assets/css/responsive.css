@@ -1,3 +1,4 @@
+
 /* Tablet & Mobile */
 @media (max-width : 1024px) {
     .hide-on-tablet-mobile{
@@ -108,6 +109,8 @@
         background-color: turquoise;
         padding: 30px 16px;
         visibility: hidden;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#ff6433), to(#f53f2d));
+        background-image: -o-linear-gradient(0, #ff6433, #f53f2d);
         background-image: linear-gradient(0, #ff6433, #f53f2d);
     }
 
@@ -133,7 +136,9 @@
     }
 
     .footer__content:nth-of-type(3) .footer__pay-list{
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .footer__qr-code{
