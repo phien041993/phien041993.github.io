@@ -1,234 +1,156 @@
-/* Mobile & tablet */ 
-@media (max-width: 1023px) {
-    .app__content{padding-top: 8px;}
-
-    .header__suggestions{
-        top: 32px;
+/* Tablet & Mobile */
+@media (max-width : 1024px) {
+    .hide-on-tablet-mobile{
+        display: none !important;
     }
 
-    .hide-on-mobile-tablet{
-        display: none;
+    .header__with-search{
+        height: var(--header-height);
     }
 
-    .header__cart-list{
-        position: fixed;
-        top: var(--header_height);
-        right: 0;
-        width: 100%;
-        padding: 0 calc((100% - 644px) / 2);
+    .header__navbar-user-list {
+        top: calc(100% + 5px);
+        right: -32px;
     }
 
-    .header__cart-item-trash{
-        display: block;
-    }
-    .header__cart-item-remove{
-        display: none;
-    }
-
-    .app__container{
-        margin-top: calc(var(--header_height) + var(--header_sort-bar-height));
-    }
-
-    .header__sort-bar{
-        display: flex;
+    :root{
+        --header-height: 80px;
     }
 
     .header__logo{
-        width: 60px;
+        width: 10%;
     }
 
-    .header__logo-shopee{
+    .header__cart{
+        width: 10%;
+        margin-right: 6px;
+    }
+
+    .header__navbar-list-item{
+        padding-right: 0;
+    }
+
+    .header__navbar-list-item-link{
+        margin-right: 0;
+    }
+
+    .header__navbar-user{
+        margin-right: 0;
+    }
+
+    .content {
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-top: calc(var(--header-height) + 36px);
+        padding-top: 20px;
+    }
+
+    .header__search-suggestion {
+        top: calc(100% + 3px);
+    }
+
+    .header__sort-bar{
         display: block;
     }
 
-    .mobile-category{
+    .mobile-category {
         display: block;
+        margin-bottom: 14px;
     }
-
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-    :root{
-        --header_height: 80px;
-        --navbar_height: 0px;
-    }
-
-    .hide-on-tablet{
-        display: none;
-    }
-
-    .header__cart{
-        width: 70px;
-        text-align: right;
-    }
-
-    .header__navbar-item{
-        position: absolute;
-        top: 26px;
-        right: 20px;    
-    }
-
-    .header__navbar-user-img{
-        width: 32px;
-        height: 32px;
-    }
-    .header__navbar-item-account{
-        right: -20px;
-        top: calc(100% + 10px)
-    }
-    .header__navbar-item-account::before{
-        top: -20px;
-        right: 18px;
-    }
-    .header__cart-list{
-        width: 90%;
-        right: 40px;
-    }
-    .header__cart-list::after{
-        right: 24px;
-    }
-}
-
-/* Tablet pro */
-@media (min-width: 1024px) and (max-width: 1365px) {
- 
-    .hide-on-tablet-pro{
+    .hide-on-tablet {
         display: none;
     }
 }
 
-
-/* Mobile */ 
+/* Mobile */
 @media (max-width: 739px) {
-    :root{
-        --header_height: 60px;
-        --navbar_height: 0px;
-    }
-
-    .hide-on-mobile{
-        display: none;
-    }
-    
-    .header__cart-wrap:hover .hide-on-mobile{
+    .hide-on-mobile {
         display: none;
     }
 
-    .header__cart-wrap:hover .header__cart-list-mobile{
-        display: block;
+    .header__logo{
+        width: 12%;
     }
 
-    .header__cart-img{
-        width: 100px;
-        height: 100px;
+    .header__with-search{
+        position: relative;
     }
 
-    .header__cart-item-name{
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: block;
-        width: 100px;
-        font-size: 1.8rem;
+    .header__cart,
+    .header__cart-wrap {
+        position: unset;
     }
 
-    .header__cart-item-quote{
-        font-size: 1.4rem;
+    .header__cart-notice {
+        top: calc(100% - 17px);
+        right: 0;
+        width: 100vw;
     }
 
-    .header__cart-item-prime-wrap{
-        text-align: left;
-        margin-left: 8px;
-        margin-top: 10px;
+    .header__cart-notice::after{
+        right: 26px;
     }
 
-    .header__cart-item-prime{
-        font-size: 1.6rem;
-    }
-
-    .header__cart-item-multiply{
-        font-size: 1.2rem;
-    }
-
-    .header__cart-item-quantity{
-        font-size: 1.4rem;
-    }
-
-    .header__cart-item-trash{
-        display: inline-block;
-        padding: 8px;
-        font-size: 2.2rem;
-        margin-top: 8px
-    }
-
-    .header__cart-list::after{
-        right: 20px;
-    }
-
-    .header__logo-shopee{
-        margin-left: 10px;
-    }
-
-    .nav__mobile{
-        display: block;
-    }
-
-    .header__cart{
-        width: 60px;
-    }
-
-    .header__cart-wrap{
-        right: 2px;
-    }
-
-    .header__cart-list{
-        padding: 0 20px;
-    }
-
-    .header-with-search{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .header__search{
-        flex: unset;
-        width: 360px;
-        margin-left: 36px;
-    }
-
-    .heade__search-select{
+    .header__search-content-input::after{
         display: none;
     }
 
-    .header__mobile-bars{
-        display: block;
+    .header__navbar-user-list{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 60%;
+        background-color: turquoise;
+        padding: 30px 16px;
+        visibility: hidden;
+        background-image: linear-gradient(0, #ff6433, #f53f2d);
     }
 
-    .pagination-item{
-        margin: 0;
+    .header__navbar-user-item{
+        margin-bottom: 12px;
     }
 
-    .pagination-item__link{
-        --height: 28px;
-        font-size: 1.6rem;
-        min-width: 34px;
+    .header__navbar-user-list::after{
+        display: none;
     }
 
-    .app__content{
-        margin: 0 4px;
+    .content__home-pagination-item{
+        margin: 0 1px;
     }
 
-    .footer{
-        padding: 0 16px;
+    .footer {
+        margin-left: 6px;
+        margin-right: 6px;
     }
 
-    .text-center-mobile{
+    .footer__content:nth-of-type(3) {
         text-align: center;
+    }
+
+    .footer__content:nth-of-type(3) .footer__pay-list{
         justify-content: center;
     }
 
-    .footer__down-qr-code{
-        margin-right: 4px;
+    .footer__qr-code{
+        display: none;
     }
+}
 
+/* PC low */ 
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .hide-on-pc-low {
+        display: none;
+    }
+}
+
+/* PC */
+@media (min-width : 1025px) {
+    .hide-on-pc {
+        display: none;
+    }
 }
